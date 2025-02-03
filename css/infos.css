@@ -1,0 +1,106 @@
+.infos {
+    grid-area: info;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    gap: 24px;    
+}
+
+.infos p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #b3b3b3;
+}
+
+.infos a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #b3b3b3b7;
+}
+
+.infos span {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #b3b3b3;
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;    
+}
+
+.clients img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* Dispositivos pequenos, como telefones grandes (640px e superior) */ 
+@media only screen and ( min-width : 640px ) {
+    .clients {               
+        gap: 40px;      
+    }
+}
+   
+
+/* Dispositivos médios, como tablets (768px e superior) */ 
+@media only screen and ( min-width : 768px ) {}
+   
+
+/* Dispositivos grandes como laptops (1024px e superior) */ 
+@media only screen and ( min-width : 1024px ) {
+    .infos {
+        align-items: start;        
+    }
+
+    .infos p {
+        font-size: 20px;
+        line-height: 36px;  
+        text-align: start;      
+    }
+
+    .infos span {
+        font-size: 20px;
+        line-height: 36px;  
+        text-align: start;      
+    }
+
+    .clients {       
+        width: 100%;   
+        align-items: center;  
+        justify-content: center;  
+        gap: 20px;        
+    }
+
+    .clients img {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #ffffff;
+    }
+}
+   
+
+/* Dispositivos maiores, como desktops (1280px e superior) */ 
+@media only screen and ( min-width : 1280px ) {
+    .infos p {
+        font-size: 24px;                   
+    }
+
+    .infos span {
+        font-size: 24px;        
+    }
+
+    .clients {               
+        gap: 30px;        
+    }
+    
+}
